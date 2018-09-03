@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* End Resets */ 
+#main {
+  max-width:1200px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  position:relative;
+  font-weight: bold;
+  font-size: 24px;
+  background-color:#a42c40;
+  color:#ffffff;
+  height:45px;
+  overflow:visible;  
+  text-align:right;
+  z-index:2;
+}
+
+#headerlogo {
+  position:absolute;
+  top:17px;
+  left:60px;
+}
+
+#logo {
+  width:225px;
+}
+
+#nav {
+  float:right;
+}
+#nav li {
+  float: left;
+  border-left:2px solid #fff;
+}
+#nav li:last-child {
+  border-right: 2px solid #fff;
+}
+
+#nav li.selected {
+  background-color:#c47683;
+}
+
+#nav li:hover {
+  background-color:#c47683 !important;
+}
+
+#nav li a {
+  font-size: 18px;
+  color:#ffffff;
+  text-decoration: none;
+  display:inline-block;
+  padding: 15px 15px 12px 15px;
+}
+
+#phone {
+  float:right;
+  margin: 12px 70px 0px 70px; 
+}
+
+.hero {
+  clear:right;
+  max-width:1200px;
+  margin-top: 2px;
+  vertical-align:top;
+  max-height:472px;
+  overflow:hidden;
+  position:relative;
+  z-index:1;
+}
+.hero img {
+  width:100%;
+}
+.hero p{
+  position:absolute;
+  top:10px;
+  right:0px;
+  font-weight:bold;
+  font-size:48px;
+  width:340px;
+  color:#ffffff;
+  margin: 90px 10% 0 0;
+}
+small{
+  font-size:small;
+}
+.currencyinput {
+  border: 1px solid #e6e6e6;
+  padding: 5px 5px;
+  margin: 8px 0px;
+}
+.currencyinput input {
+  border: 0;
+  width: 70%;
+  padding: 5px 5px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+}
+button{
+  vertical-align:baseline;
+  font-size:100%;
+}
+
+input[type=button], input[type=sumbit], input[type=reset]{
+  background-color: #a42c40;
+  color:#ffffff;
+  border:1px solid #e6e6e6;
+  padding:5px;
+  margin: 15px 35px 15px;
+  font-size: 17px;  
+}
+table.center{
+  width:500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+body {text-align:center;}
+#content {
+  text-align:center;
+  color:#000000;
+  max-width:962px;
+  margin: 0 auto;
+}
+
+#content h1{
+  font-size:36px;
+  font-weight:bold;
+  margin-top:35px;
+}
+
+#content p {
+  font-size: 24px;
+  max-width:800px;
+  font-weight:normal;
+  margin: 0 auto;
+  padding-top: 20px;
+  line-height:1.15;
+}
+#content ul {
+  margin:0 auto;
+  max-width:962px;
+  display:inline-table;
+}
+
+#content ul li {
+  float:left;  
+  width: 240px;
+  padding:10px 40px;
+}
+
+#content ul li p {
+  font-size:15px;
+  width:240px;
+  padding-top:10px;
+  font-weight:normal;
+}
+
+#content ul li p:first-line {
+  font-size:22px;
+}
+
+footer {
+  clear:both;
+  background-color: #a42c40;
+  margin-top:45px;
+}
+
+footer ul {
+  margin: 0 auto;
+  max-width:720px;
+}
+
+footer li {
+  float:left;
+}
+footer li:hover {
+  background-color:#c47683;
+}
+
+footer li a {
+  text-decoration:none;
+  color:#ffffff;
+  padding: 15px 25px;
+  display: inline-block;
+}
+
+footer li.selected {
+  background-color:#c47683;
+}
+
+#map {
+  max-width:962px;
+  margin: 0 auto;
+  clear:both;
+  padding:25px 0 55px 0;
+  overflow:hidden;
+}
+
+#map iframe {
+  padding:0px 40px;
+  float:left;
+}
+
+#addressBlock {
+  color:#ffffff;
+}
+#addressBlock {
+  font-size:30px;
+  font-weight:bold;
+}
+address {
+  font-weight:normal; 
+  padding-top:25px;
+  line-height:1.5;
+  font-size:18px;
+}
+#addressBlock address:first-line{
+  font-size:24px;
+}
+.icon {
+  height:30px;
+  padding-top:8px;
+  padding-right:5px;
+}
+
+.box-shadow-menu {
+  position: relative;
+  float:right;
+  width:45px;
+  height:45px;
+  display:none;
+}
+.box-shadow-menu:before {
+  content: "";
+    position: absolute;
+  left: 0;
+    top: 0.5em;
+  width: 1em;
+    height: 0.20em;
+  background: white;
+    -webkit-box-shadow: 
+    0 0.35em 0 0 white,
+    0 0.70em 0 0 white;
+    -moz-box-shadow: 
+    0 0.35em 0 0 white,
+    0 0.70em 0 0 white;
+    box-shadow: 
+    0 0.35em 0 0 white,
+    0 0.70em 0 0 white;
+}
+#footmenu-wrap {
+  width:100%;
+  border-bottom: 1px solid #fff;
+  overflow:hidden;
+}
+
+@media screen and (max-width:1200px){
+  #phone {
+    margin:12px 50px 0px 50px;
+  }
+}
+@media screen and (max-width:1130px){
+  #phone {
+    margin: 12px 30px 0px 30px;
+  }
+  #nav li a {
+    padding: 15px 30px 12px 30px;
+  }
+}
+@media screen and (max-width:1010px){
+  #headerlogo {
+    left:30px;
+  }
+  #logo {
+    width:200px;
+  }
+  #content ul li {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 960px){
+  #phone {
+    margin: 12px 25px 0px 30px;
+  }
+  .box-shadow-menu {
+    display:block;
+  }
+  #nav {
+    display:none;
+    position:absolute;
+    z-index:20;
+    background-color:#a42c40;
+    top:45px;
+    right:0px;
+  }
+  #nav li a {
+    padding: 15px 101px 12px 101px;
+  }
+  #nav ul {
+    width:320px;
+    text-align:center;
+  }
+  #nav li {
+    float:none;
+    border-right:2px solid #fff;
+    border-bottom:1px solid #fff;
+  }
+  #nav li:last-child {
+    border-bottom: 2px solid #fff;
+  }
+  #content ul li {
+    width: 200px;
+  }
+  footer li a {
+    padding: 15px 46px;
+  }
+}
+@media screen and (max-width:800px){
+  #content ul li {
+    float:none;
+  }
+}
+@media screen and (max-width:700px){
+  .hero p {
+    margin: 70px 2% 0 0;
+    font-size:36px;
+  }
+  #footmenu-wrap {
+    display:none;
+  }
+  #map iframe {
+    display:none;
+  }
+  #addressBlock {
+    padding-left:40px;
+  }
+  #content {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width:600px){
+  .hero p {
+    display:none;
+  }
+  #logo{
+    width:80px;
+  }
+  #headerlogo {
+    left:10px;
+    top:10px;
+  }
+}
+@media screen and (max-width:320px){
+  #nav ul {
+    width:223px;
+  }
+  #nav li a {
+    padding: 10px 0px;
+  }
+  #phone {
+    margin: 12px 12px;
+    font-size:20px;
+  }
+}
