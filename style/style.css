@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -35,7 +35,7 @@ ol, ul {
 	list-style: none;
 }
 
-/* End Resets */ 
+/* End Resets */
 #main {
   max-width:1200px;
   margin: 0 auto;
@@ -49,7 +49,7 @@ header {
   background-color:#a42c40;
   color:#ffffff;
   height:45px;
-  overflow:visible;  
+  overflow:visible;
   text-align:right;
   z-index:2;
 }
@@ -93,7 +93,7 @@ header {
 
 #phone {
   float:right;
-  margin: 12px 70px 0px 70px; 
+  margin: 12px 70px 0px 70px;
 }
 
 .hero {
@@ -145,7 +145,7 @@ input[type=button], input[type=sumbit], input[type=reset]{
   border:1px solid #e6e6e6;
   padding:5px;
   margin: 15px 35px 15px;
-  font-size: 17px;  
+  font-size: 17px;
 }
 table.center{
   width:500px;
@@ -181,9 +181,13 @@ body {text-align:center;}
 }
 
 #content ul li {
-  float:left;  
+  float:left;
   width: 240px;
   padding:10px 40px;
+}
+
+#content h4 {
+	font-size: 24px;
 }
 
 #content ul li p {
@@ -191,10 +195,6 @@ body {text-align:center;}
   width:240px;
   padding-top:10px;
   font-weight:normal;
-}
-
-#content ul li p:first-line {
-  font-size:22px;
 }
 
 footer {
@@ -247,7 +247,7 @@ footer li.selected {
   font-weight:bold;
 }
 address {
-  font-weight:normal; 
+  font-weight:normal;
   padding-top:25px;
   line-height:1.5;
   font-size:18px;
@@ -276,13 +276,13 @@ address {
   width: 1em;
     height: 0.20em;
   background: white;
-    -webkit-box-shadow: 
+    -webkit-box-shadow:
     0 0.35em 0 0 white,
     0 0.70em 0 0 white;
-    -moz-box-shadow: 
+    -moz-box-shadow:
     0 0.35em 0 0 white,
     0 0.70em 0 0 white;
-    box-shadow: 
+    box-shadow:
     0 0.35em 0 0 white,
     0 0.70em 0 0 white;
 }
