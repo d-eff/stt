@@ -4,6 +4,7 @@ var lienSearch = 0;
 var totalFees = 0;
 var ownersPolicy = 0;
 var closingFee = 0;
+var closingTechFee = 0;
 
 function calcSellersPolicy()
 {
@@ -22,6 +23,7 @@ function calcSellersPolicy()
 
 	totalFees = 0;
 	price = parseFloat(document.sellerCalc.price.value);
+	closingTechFee = parseFloat(document.sellerCalc.closingTechFee.value);
 	closingFee = parseFloat(document.sellerCalc.closingFee.value);
 	titleSearch = parseFloat(document.sellerCalc.titleSearch.value);
 	lienSearch = parseFloat(document.sellerCalc.lienSearch.value);
@@ -52,7 +54,7 @@ function calcSellersPolicy()
 		ownersPolicy = 100;
 	}
 
-	totalFees = ownersPolicy + titleSearch + lienSearch + closingFee;
+	totalFees = ownersPolicy + titleSearch + lienSearch + closingFee + closingTechFee;
 	document.sellerCalc.ownersPolicy.value = Math.round((ownersPolicy + 0.00001) * 100) / 100;
 	document.sellerCalc.totalFees.value = Math.round((totalFees + 0.00001) * 100) / 100;
 }
