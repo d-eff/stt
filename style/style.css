@@ -292,9 +292,6 @@ address {
   overflow:hidden;
 }
 
-.imgBox {
-  display: flex;
-}
 .awardImg {
   padding: 5px;
   width: 33%;
@@ -366,6 +363,7 @@ address {
     float:none;
   }
   .imgBox {
+    display: flex;
     align-items: center;
     flex-direction: column;
   }
